@@ -57,9 +57,9 @@ class Building(citygraph.Feature):
         self.btype = btype
         self.conso = conso
         if conso != None:
-            super(Building, self).__init__(0, lon, lat, "monitored_building", "building")
+            super(Building, self).__init__(lon, lat, "monitored_building", "building")
         else:
-            super(Building, self).__init__(0, lon, lat, "unmonitored_building", "building")
+            super(Building, self).__init__(lon, lat, "unmonitored_building", "building")
 
 class ElecSection(object):
     def __init__(self, section, input):
