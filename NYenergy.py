@@ -351,7 +351,21 @@ NY.learn()
 
 
 
+# import json
+# out = []
 
+# for elecsection in NY.elecsections:
+#     section = elecsection.section
+#     lons = [node.lon for node in section.nodes]
+#     lats = [node.lat for node in section.nodes]
+#     lonlat = [[lon,lat] for lon, lat in zip(lons, lats)]
+#     val = NY.classifier.predict(elecsection.input)[0]
+#     s = {"coords" : lonlat, "id" : section.id, "value" : val}
+#     out += [s]
+
+# outfile = open("empl.json", "w")
+# outfile.write(json.dumps(out))
+# outfile.close()
 
 
 
